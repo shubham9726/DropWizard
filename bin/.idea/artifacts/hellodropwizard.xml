@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="hellodropwizard">
+    <output-path>$PROJECT_DIR$/out/artifacts/hellodropwizard</output-path>
+    <root id="root">
+      <element id="archive" name="hellodropwizard.jar">
+        <element id="module-output" name="hellodropwizard" />
+      </element>
+    </root>
+  </artifact>
+</component>

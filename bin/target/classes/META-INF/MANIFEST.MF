@@ -1,0 +1,52 @@
+Manifest-Version: 1.0
+Built-By: Divya
+Class-Path: dropwizard-core-1.3.9.jar dropwizard-util-1.3.9.jar jsr305
+ -3.0.2.jar joda-time-2.10.1.jar dropwizard-validation-1.3.9.jar hiber
+ nate-validator-5.4.3.Final.jar validation-api-1.1.0.Final.jar jboss-l
+ ogging-3.3.0.Final.jar javax.el-3.0.0.jar javassist-3.24.1-GA.jar dro
+ pwizard-configuration-1.3.9.jar jackson-dataformat-yaml-2.9.8.jar sna
+ keyaml-1.23.jar commons-lang3-3.7.jar commons-text-1.2.jar dropwizard
+ -logging-1.3.9.jar metrics-logback-4.0.5.jar jul-to-slf4j-1.7.26.jar 
+ logback-core-1.2.3.jar logback-classic-1.2.3.jar log4j-over-slf4j-1.7
+ .26.jar jcl-over-slf4j-1.7.26.jar jetty-util-9.4.14.v20181114.jar dro
+ pwizard-metrics-1.3.9.jar dropwizard-jersey-1.3.9.jar jersey-server-2
+ .25.1.jar jersey-common-2.25.1.jar jersey-guava-2.25.1.jar osgi-resou
+ rce-locator-1.0.1.jar javax.ws.rs-api-2.0.1.jar jersey-media-jaxb-2.2
+ 5.1.jar javax.annotation-api-1.3.1.jar hk2-api-2.5.0-b32.jar hk2-util
+ s-2.5.0-b32.jar aopalliance-repackaged-2.5.0-b32.jar javax.inject-2.5
+ .0-b32.jar hk2-locator-2.5.0-b32.jar jersey-metainf-services-2.25.1.j
+ ar jersey-bean-validation-2.25.1.jar metrics-jersey2-4.0.5.jar jackso
+ n-jaxrs-json-provider-2.9.8.jar jackson-jaxrs-base-2.9.8.jar jackson-
+ module-jaxb-annotations-2.9.8.jar jersey-container-servlet-2.25.1.jar
+  jersey-container-servlet-core-2.25.1.jar jetty-server-9.4.14.v201811
+ 14.jar javax.servlet-api-3.1.0.jar jetty-io-9.4.14.v20181114.jar jett
+ y-webapp-9.4.14.v20181114.jar jetty-xml-9.4.14.v20181114.jar jetty-co
+ ntinuation-9.4.14.v20181114.jar dropwizard-servlets-1.3.9.jar metrics
+ -annotation-4.0.5.jar dropwizard-jetty-1.3.9.jar metrics-jetty9-4.0.5
+ .jar jetty-servlet-9.4.14.v20181114.jar jetty-security-9.4.14.v201811
+ 14.jar jetty-servlets-9.4.14.v20181114.jar jetty-http-9.4.14.v2018111
+ 4.jar dropwizard-lifecycle-1.3.9.jar metrics-core-4.0.5.jar metrics-j
+ vm-4.0.5.jar metrics-jmx-4.0.5.jar metrics-servlets-4.0.5.jar metrics
+ -json-4.0.5.jar profiler-1.0.2.jar metrics-healthchecks-4.0.5.jar dro
+ pwizard-request-logging-1.3.9.jar logback-access-1.2.3.jar argparse4j
+ -0.8.1.jar jetty-setuid-java-1.0.3.jar dropwizard-jackson-1.3.14.jar 
+ guava-24.1.1-jre.jar checker-compat-qual-2.0.0.jar error_prone_annota
+ tions-2.1.3.jar j2objc-annotations-1.1.jar animal-sniffer-annotations
+ -1.14.jar jackson-annotations-2.9.0.jar jackson-databind-2.9.8.jar ja
+ ckson-datatype-guava-2.9.8.jar jackson-datatype-jsr310-2.9.8.jar jack
+ son-datatype-jdk8-2.9.8.jar jackson-module-parameter-names-2.9.8.jar 
+ jackson-module-afterburner-2.9.8.jar jackson-datatype-joda-2.9.8.jar 
+ slf4j-api-1.7.26.jar dropwizard-hibernate-1.3.9.jar dropwizard-db-1.3
+ .9.jar tomcat-jdbc-9.0.16.jar tomcat-juli-9.0.16.jar jackson-datatype
+ -hibernate5-2.9.8.jar usertype.core-7.0.0.CR1.jar usertype.spi-7.0.0.
+ CR1.jar hibernate-core-5.2.18.Final.jar hibernate-jpa-2.1-api-1.0.0.F
+ inal.jar antlr-2.7.7.jar jboss-transaction-api_1.2_spec-1.0.1.Final.j
+ ar jandex-2.0.3.Final.jar classmate-1.4.0.jar dom4j-2.1.1.jar hiberna
+ te-commons-annotations-5.0.1.Final.jar mongo-java-driver-3.10.2.jar j
+ ackson-mapper-asl-1.9.13.jar jackson-core-asl-1.9.13.jar jackson-core
+ -2.9.9.jar mongo-jackson-mapper-1.3.jar bson4jackson-1.3.0.jar persis
+ tence-api-1.0.2.jar gson-2.8.5.jar jersey-client-2.25.1.jar
+Build-Jdk: 1.8.0_121
+Created-By: Maven Integration for Eclipse
+Main-Class: com.java.hellodropwizardApplication
+
