@@ -3,7 +3,7 @@ package com.java;
 import com.java.health.MongoManaged;
 import com.java.health.TemplateHealthCheck;
 import com.java.resources.EmployeeResource;
-import com.java.service.employeeServiceImpl;
+import com.java.service.EmployeeService;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
@@ -39,11 +39,11 @@ public class hellodropwizardApplication extends Application<hellodropwizardConfi
     MongoDatabase db = mongoClient.getDatabase(configuration.getMongoDB());
     MongoCollection<Document> collection = db.getCollection(configuration.getCollectionName());
     logger.info("Registering RESTful API resources");
-    final employeeServiceImpl employeeServiceImpl = new employeeServiceImpl(collection);
+    final EmployeeService employeeService = new EmployeeService(collection);
 /*
     environment.jersey().register(new employeeServiceImpl(collection, new EmployeeRepositry()));
 */
-    environment.jersey().register(new EmployeeResource(employeeServiceImpl));
+    environment.jersey().register(new EmployeeResource(employeeService));
     environment.healthChecks().register("TemplateHealthCheck",
       new TemplateHealthCheck(mongoClient));
     }

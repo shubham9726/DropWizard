@@ -9,18 +9,18 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public class employeeServiceImpl  {
+public class EmployeeService  {
 
   final MongoCollection<Document> collection;
-  public employeeServiceImpl(MongoCollection<Document> collection) {
+  public EmployeeService(MongoCollection<Document> collection) {
     this.collection = collection;
   }
 
   public void insertOne(Employee employee) {
     final Document saveEmployee =new Document("name", employee.getName())
             .append("address", employee.getAddress())
-            .append("employeeId", employee.getEmployeeId());;
-    collection.insertOne(saveEmployee );
+            .append("employeeId", employee.getEmployeeId());
+    collection.insertOne(saveEmployee);
   }
 
   public List<Employee> getAll() {
