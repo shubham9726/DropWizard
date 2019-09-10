@@ -7,14 +7,14 @@ public class EmployeeMapper {
     /**
      * Map objects {@link Document} to {@link Employee}.
      *
-     * @param donutDocument the information document.
+     * @param employeeDocument the information document.
      * @return A object {@link Employee}.
      */
-    public static Employee map(final Document donutDocument) {
+    public static Employee map(final Document employeeDocument) {
       final Employee employee = new Employee();
-        employee.setName(donutDocument.getString("name"));
-      employee.setAddress(donutDocument.getString("address"));
-      employee.setEmployeeId(donutDocument.getString("employeeId"));
+        employee.setName(employeeDocument.getString("name"));
+      employee.setAddress(employeeDocument.getString("address"));
+      employee.setEmployeeId(employeeDocument.getString("employeeId"));
       return employee;
     }
   }
