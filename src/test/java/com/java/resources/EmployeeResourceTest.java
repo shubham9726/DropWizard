@@ -17,7 +17,7 @@ import java.util.Collections;
 public class EmployeeResourceTest {
 
   private static final EmployeeService dao = Mockito.mock(EmployeeService.class);
-  public static final String CONTEXT = "/employee";
+  private static final String CONTEXT = "/employee";
   private static Employee employee;
 
   @ClassRule
