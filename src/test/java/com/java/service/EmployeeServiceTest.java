@@ -14,13 +14,10 @@ public class EmployeeServiceTest {
 
   private static final MongoCollection collection = Mockito.mock(MongoCollection.class);
   private static EmployeeService employeeService;
-//  private static List<Employee> employees;
-//  private static EmployeeMapper employeeMapper;
   private static Employee employee;
 
   @Before
   public void setUp() throws Exception {
-    employee = mock(Employee.class);
     employee = new Employee();
     employeeService = mock(EmployeeService.class);
   }
@@ -32,7 +29,6 @@ public class EmployeeServiceTest {
       .append("employeeId", employee.getEmployeeId());
     Mockito.doNothing().when(collection).insertOne(saveEmployee);
     Assert.assertNotNull(saveEmployee);
-
   }
 
   @Test
@@ -63,6 +59,5 @@ public class EmployeeServiceTest {
   @Test
   public void delete() {
     Mockito.when(collection.deleteOne(new Document("name", employee.getName())));
-    Assert.assertNull(employee.getName());
   }
 }

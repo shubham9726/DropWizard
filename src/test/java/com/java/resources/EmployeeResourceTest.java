@@ -3,6 +3,7 @@ package com.java.resources;
 import com.java.domain.Employee;
 import com.java.service.EmployeeService;
 import io.dropwizard.testing.junit.ResourceTestRule;
+import org.assertj.core.util.Lists;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.ClassRule;
@@ -12,7 +13,6 @@ import org.mockito.Mockito;
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.util.Collections;
 
 public class EmployeeResourceTest {
 
@@ -50,7 +50,7 @@ public class EmployeeResourceTest {
 
   @Test
   public void getAllEmployees() {
-    Mockito.when(dao.getAll()).thenReturn(Collections.singletonList(employee));
+    Mockito.when(dao.getAll()).thenReturn(Lists.newArrayList(employee));
     final Response responseTest = resources.target(CONTEXT).path("/getAllEmployee").request().get();
     Assert.assertNotNull(responseTest);
     Assert.assertEquals(Response.Status.OK.getStatusCode(), responseTest.getStatus());

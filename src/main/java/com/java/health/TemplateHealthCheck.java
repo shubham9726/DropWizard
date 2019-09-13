@@ -2,7 +2,6 @@ package com.java.health;
 
 import com.codahale.metrics.health.HealthCheck;
 import com.mongodb.MongoClient;
-import com.mongodb.client.MongoCursor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,9 +16,8 @@ public class TemplateHealthCheck extends HealthCheck {
   @Override
   protected Result check() throws Exception {
     List<String> dbs = new ArrayList<>();
-    MongoCursor<String> dbsCursor = mongoClient.listDatabaseNames().iterator();
-    while (dbsCursor.hasNext()) {
-      dbs.add(dbsCursor.next());
+    for (String s : mongoClient.listDatabaseNames()) {
+      dbs.add(s);
     }
     if (dbs.size() > 0) {
       return Result.healthy("Database names in MongogDB are: " + dbs);
